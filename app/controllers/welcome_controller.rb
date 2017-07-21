@@ -77,7 +77,7 @@ class WelcomeController < ApplicationController
     # if no error is returned from the call, we fill our instants variables with the result of the call
      
       if results['response']['error'] == nil || results['error'] == ""    
-        @location = results['location']['city']
+        @city = results['location']['city']
         @state = results['location']['state']
         @temp_f = results['current_observation']['temp_f']
         @temp_c = results['current_observation']['temp_c']

@@ -15,8 +15,6 @@
     </div>
   </div>
 </div>
-
-<!-- Our response from wunderground's API -->
 <div class="row pad-top-50">
   <div class='col-md-3'>
   <aside id='city-list'>
@@ -31,10 +29,8 @@
   </aside></div>
   <div class="col-md-6 col-md-offset-1">
     <div class="well center-it">
-<!-- Bring in the instance variable from our controller to display on our index page. -->
-<!-- Check to make sure @location is not empty or nil and  that the API did not return an error -->
-      <% if @location != nil && @location != "" && (@error == "" || @error == nil) %>
-        <h1>Forecast for <%= @location %>,&nbsp;<%= @state %></h1>
+      <% if @city != nil && @city != "" && (@error == "" || @error == nil) %>
+        <h1>Forecast for <%= @city %>,&nbsp;<%= @state %></h1>
         <div class="row">
           <div class="col-md-7">
             <p><em>What's the weather like?</em></p>
