@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Gems unique to this app.
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'wunderground'
